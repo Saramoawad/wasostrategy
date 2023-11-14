@@ -1,0 +1,327 @@
+* {
+    padding   : 0px;
+    margin    : 0px;
+    box-sizing: border-box;
+}
+
+.btn {
+    margin-top      : 20px;
+    padding         : 20px;
+    width           : 150px;
+    color           : #eee;
+    font-size       : 20px;
+    background-color: var(--red);
+}
+
+.btn:hover {
+    background-color: #fff;
+
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --red   : rgb(195, 42, 60);
+    --yellow: rgb(244, 191, 13);
+    --gray  : rgb(118, 118, 118);
+}
+
+h2 {
+    color: var(--red);
+}
+
+/* start nav */
+nav {
+    height          : 78px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-brand {
+    color      : var(--yellow);
+    font-weight: 700;
+
+}
+
+nav .red {
+    color: var(--red);
+}
+
+.nav-link:hover {
+    background-color: var(--red);
+    color           : #fdfdfd;
+}
+
+.navbar-toggler {
+    color        : var(--red);
+    border       : 1px solid var(--yellow);
+    border-radius: 10px;
+}
+
+
+/* end nav */
+
+/* start landing */
+.landing {
+    height                   : 100vh;
+    background-image         : url(../images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg);
+    background-position      : center;
+    background-size          : cover;
+    animation                : slider 5s infinite;
+    animation-timing-function: linear;
+    animation-direction      : alternate;
+}
+
+@keyframes slider {
+    form {
+        background-image: url(../images/slide/christina-wocintechchat-com-NDoVgcS_lZM-unsplash.jpg);
+    }
+
+    to {
+        background-image: url(../images/slide/jason-goodman-0K7GgiA8lVE-unsplash.jpg);
+    }
+}
+
+.landing h3 {
+    font-weight: 800;
+    font-size  : 60px;
+    color      : #eee;
+}
+
+/* end landing */
+
+
+/* start about */
+
+.left-about img {
+    width        : 100%;
+    height       : 100%;
+    border-radius: 20px;
+}
+
+.left-about {
+    position  : relative;
+    margin-top: 3%;
+
+
+}
+
+.left-about .about-layer {
+    height                    : 25%;
+    width                     : 100%;
+    /* background-color       : rgba(0, 0, 0, 0.295); */
+    position                  : absolute;
+    bottom                    : 40px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.top-about {
+    background-color: rgb(255, 255, 255);
+    box-shadow      : 3px 3px 10px 10px rgba(209, 209, 209, 0.499);
+    border-radius   : 20px;
+    line-height     : 2;
+    padding         : 10px;
+}
+
+.top-about h3 {
+    font-size  : 40px;
+    color      : var(--red);
+    font-weight: 600;
+}
+
+.top-about h4 {
+    font-size: 32px;
+    color    : var(--yellow);
+}
+
+.about .one {
+    background-color: var(--red);
+    border-radius   : 20px;
+    box-shadow      : 3px 3px 10px 10px rgba(209, 209, 209, 0.499);
+    color           : #eee;
+}
+
+.about .two {
+    background-color: var(--yellow);
+    border-radius   : 20px;
+    box-shadow      : 3px 3px 10px 10px rgba(209, 209, 209, 0.499);
+    color           : #eee;
+}
+
+/* end about */
+
+/* start services */
+.services {
+    background-color: rgb(244, 244, 244);
+    padding-bottom  : 50px;
+}
+
+.after:hover {
+    background-color: rgb(249, 251, 252);
+    box-shadow      : 3px 3px 10px 10px rgba(212, 211, 211, 0.531);
+
+}
+
+.after:hover h3 {
+    color: var(--yellow);
+}
+
+.services .slider {
+    height                   : 550px;
+    width                    : 100%;
+    background-image         : url(../images/services/portrait-smiling-african-american-young-woman-holding-movie-production-blackboard.jpg);
+    background-position      : center;
+    background-size          : cover;
+    animation                : slide 6s infinite;
+    animation-timing-function: linear;
+    animation-direction      : alternate;
+    border-radius            : 20px;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../images/services/startup-leader-drawing-flowchart-board-discussing-project.jpg);
+    }
+
+    50% {
+        background-image: url(../images/services/young-entrepreneurs-mature-investor-watching-presentation-discussing-project.jpg);
+    }
+
+    100% {
+        background-image: url(../images/services/portrait-smiling-african-american-young-woman-holding-movie-production-blackboard.jpg);
+    }
+}
+
+/* end services */
+
+/* start PROJECTS */
+.base {
+    position     : relative;
+    overflow     : hidden;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+
+.base img {
+    transition: scale .8s;
+}
+
+.base:hover img {
+    scale: 1.1;
+}
+
+.project-layer {
+    background-color: rgba(246, 244, 244, 0);
+    position        : absolute;
+    bottom          : 10px;
+    width           : 80%;
+    height          : 25%;
+}
+
+/* end PROJECTS */
+
+
+/* start contact */
+.contact {
+    background-image: url(../images/wave-haikei.svg);
+    min-height      : 700px;
+    background-size : cover;
+    margin-top      : 50px;
+}
+
+.contact h3 {
+    font-size  : 50px;
+    font-weight: 700;
+}
+
+.contact input,
+textarea {
+    display      : block;
+    padding      : 10px;
+    width        : 75%;
+    margin-top   : 20px;
+    border       : none;
+    border-bottom: 3px solid var(--red);
+}
+
+.contact textarea {
+    height          : 200px;
+    background-color: #f9f8f800;
+    padding         : 0px;
+
+}
+
+.contact input:hover {
+    background-color: var(--yellow);
+
+}
+
+.contact textarea:hover {
+    background-color: var(--yellow);
+}
+
+.contact button {
+    margin-top: 20px;
+    padding   : 20px;
+    width     : 150px;
+    color     : #eee;
+    font-size : 20px;
+}
+
+.left-contact {
+    border-radius: 20px;
+    box-shadow   : 3px 3px 10px 5px rgba(214, 213, 213, 0.701);
+    font-size    : 20px;
+}
+
+.left-contact i {
+    color: var(--yellow);
+}
+
+/* end contact */
+
+/* start footer */
+footer {
+    background-color: var(--yellow);
+}
+
+footer p {
+    font-size: 25px;
+    color    : #eee;
+}
+
+footer ul {
+    list-style-type: none;
+    display        : flex;
+    font-size      : 25px;
+    color          : #eee;
+
+}
+
+footer i:hover {
+    color: var(--red);
+}
+
+.fa-twitter {
+    color: rgb(49, 137, 236);
+}
+
+.fa-linkedin {
+    color: rgb(26, 119, 242);
+}
+
+.fa-instagram {
+    color: rgb(188, 53, 127);
+}
+
+.fa-youtube {
+    color: rgb(230, 0, 35);
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+/* end footer */
